@@ -1,0 +1,39 @@
+{
+  "name": "rmaps-angular-utils",
+  "version": "1.0.0",
+  "description": "angular directives and utilities",
+  "main": "dist/rmaps-angular-utils.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/realtymaps/rmaps-angular-utils.git"
+  },
+  "keywords": [
+    "angular",
+    "directives",
+    "utilities"
+  ],
+  "author": "RealtyMapster LLC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realtymaps/rmaps-angular-utils/issues"
+  },
+  "homepage": "https://github.com/realtymaps/rmaps-angular-utils",
+  "dependencies": {
+    "angular": "^1.2.6"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.9.1",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-closure-compiler": "^0.2.17",
+    "gulp-concat": "^2.5.2",
+    "gulp-insert": "^0.4.0",
+    "gulp-js-wrapper": "0.0.3",
+    "gulp-jshint": "^1.9.2",
+    "gulp-util": "^3.0.4",
+    "karma": "^0.12.31"
+  }
+}

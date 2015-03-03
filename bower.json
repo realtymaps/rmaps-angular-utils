@@ -1,0 +1,29 @@
+{
+  "name": "rmaps-angular-utils",
+  "version": "1.0.0",
+  "homepage": "https://github.com/realtymaps/rmaps-angular-utils",
+  "authors": [
+    "realtymapsDev@realtymaps.com"
+  ],
+  "description": "angular directives and utilities",
+  "main": "dist/rmaps-angular-utils.js",
+  "keywords": [
+    "angular",
+    "directives",
+    "ng"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.2.6"
+  },
+  "devDependencies": {
+    "closure-compiler": "~0.2.6"
+  }
+}
