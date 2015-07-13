@@ -3,15 +3,19 @@ ourPackage = require './package.json'
 fs = require 'fs'
 
 jshint = require 'gulp-jshint'
-closure = require 'gulp-closure-compiler'
+uglify = require 'gulp-uglify'
 insert = require 'gulp-insert'
 concat = require 'gulp-concat'
 jswrap = require 'gulp-js-wrapper'
 del = require 'del'
 exec = require('child_process').exec
 log = require('gulp-util').log
+jasmine = require 'gulp-jasmine2-phantomjs'
+coffee = require 'gulp-coffee'
+es = require 'event-stream'
+karma = require('karma').server
 
-module = fs.readFileSync(__dirname + '/src/wrap/module.js', "utf8");
+module = fs.readFileSync(__dirname + '/src/wrap/module.js', 'utf8');
 
 date = new Date()
 
@@ -44,10 +48,8 @@ gulp.task 'build', ->
   .pipe(gulp.dest(dest))
   .pipe(concat 'rmaps-angular-utils.js')
   .pipe(gulp.dest(dest))
-  .pipe(closure(
-    compilerPath: 'bower_components/closure-compiler/lib/vendor/compiler.jar',
-    fileName: 'build.js'
-  ))
+  .pipe(uglify(mangle:false)).on 'error', (err) ->
+    console.log err
   .pipe(concat 'rmaps-angular-utils.min.js')
   .pipe(insert.prepend(header))
   .pipe(gulp.dest(dest))
@@ -57,7 +59,7 @@ gulp.task 'default', ['clean','build']
 
 gulp.task 'clean', (cb) ->
   try
-    cleanDest = fs.readFileSync(__dirname + '/dest', "utf8");
+    cleanDest = fs.readFileSync(__dirname + '/dest', 'utf8');
   unless cleanDest
     return cb()
   del([
@@ -68,3 +70,10 @@ gulp.task 'bower', (cb) ->
   exec 'bower install', (error, stdout, stderr) ->
     log('\n'+stdout)
     cb()
+
+
+gulp.task 'spec', (done) ->
+  karma.start
+    configFile: __dirname + '/karma.conf.coffee',
+    singleRun: true
+  , done

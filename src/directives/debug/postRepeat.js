@@ -31,7 +31,7 @@ module.directive(directiveName, [
         if (attrScope.$last) {
           return scope.$evalAsync(function() {
             var doDelete;
-            $log.debug("## DOM rendering list took: " + (new Date() - postRepeat[parent.$id].lastTime) + " ms");
+            $log.debug('## DOM rendering list took: ' + (new Date() - postRepeat[parent.$id].lastTime) + ' ms');
             doDelete = (!opts || opts.doDeleteLastTime == null) ? true : opts.doDeleteLastTime;
             if (doDelete) {
               return delete postRepeat[parent.$id];

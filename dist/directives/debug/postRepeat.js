@@ -4,7 +4,7 @@
 *
 * @version: 1.0.0
 * @author: RealtyMapster LLC
-* @date: Tue Mar 03 2015 15:00:21 GMT-0500 (EST)
+* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -46,7 +46,7 @@ module.directive(directiveName, [
         if (attrScope.$last) {
           return scope.$evalAsync(function() {
             var doDelete;
-            $log.debug("## DOM rendering list took: " + (new Date() - postRepeat[parent.$id].lastTime) + " ms");
+            $log.debug('## DOM rendering list took: ' + (new Date() - postRepeat[parent.$id].lastTime) + ' ms');
             doDelete = (!opts || opts.doDeleteLastTime == null) ? true : opts.doDeleteLastTime;
             if (doDelete) {
               return delete postRepeat[parent.$id];
