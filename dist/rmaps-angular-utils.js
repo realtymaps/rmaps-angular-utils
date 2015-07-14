@@ -4,7 +4,7 @@
 *
 * @version: 1.0.0
 * @author: RealtyMapster LLC
-* @date: Tue Mar 03 2015 15:00:21 GMT-0500 (EST)
+* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -43,7 +43,7 @@ events.forEach(function(eventname) {
 *
 * @version: 1.0.0
 * @author: RealtyMapster LLC
-* @date: Tue Mar 03 2015 15:00:21 GMT-0500 (EST)
+* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -166,7 +166,49 @@ module.directive(eventDirectives);
 *
 * @version: 1.0.0
 * @author: RealtyMapster LLC
-* @date: Tue Mar 03 2015 15:00:21 GMT-0500 (EST)
+* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
+* @license: MIT
+*/var module = null;
+try{
+  module = ng.module('rmaps-utils');
+}
+catch(err){
+  module = ng.module('rmaps-utils',[]);
+}
+var events, defaultElements;
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+defaultEvents = ['click', 'dblclick', 'mouseover'];
+
+return module.directive('rmapsRootEvent', [ '$rootScope', function($rootScope) {
+  return {
+    scope: false,
+    link: function(scope, element, attrs) {
+      var logic = scope.$eval(attrs['rmaps-logic']) || '$broadcast',
+        events = scope.$eval(attrs['rmaps-events']) || defaultEvents,
+        globalEventName;
+      events.forEach(function(eventname){
+        element.on(eventname, function(event) {
+          globalEventName = 'rmapsRoot' + capitalizeFirstLetter(eventname);
+          $rootScope[logic](globalEventName, event);
+        });
+      });
+    },
+    restrict: 'A'
+  };
+}]);
+
+}(angular));
+;(function(ng) {
+/**
+*  rmaps-angular-utils
+*
+* @version: 1.0.0
+* @author: RealtyMapster LLC
+* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -208,7 +250,7 @@ module.directive(directiveName, [
         if (attrScope.$last) {
           return scope.$evalAsync(function() {
             var doDelete;
-            $log.debug("## DOM rendering list took: " + (new Date() - postRepeat[parent.$id].lastTime) + " ms");
+            $log.debug('## DOM rendering list took: ' + (new Date() - postRepeat[parent.$id].lastTime) + ' ms');
             doDelete = (!opts || opts.doDeleteLastTime == null) ? true : opts.doDeleteLastTime;
             if (doDelete) {
               return delete postRepeat[parent.$id];
