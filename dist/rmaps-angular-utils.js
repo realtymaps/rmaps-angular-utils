@@ -2,9 +2,9 @@
 /**
 *  rmaps-angular-utils
 *
-* @version: 1.0.0
+* @version: 1.0.1
 * @author: RealtyMapster LLC
-* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
+* @date: Tue Jul 14 2015 13:59:23 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -41,9 +41,9 @@ events.forEach(function(eventname) {
 /**
 *  rmaps-angular-utils
 *
-* @version: 1.0.0
+* @version: 1.0.1
 * @author: RealtyMapster LLC
-* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
+* @date: Tue Jul 14 2015 13:59:23 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -164,9 +164,9 @@ module.directive(eventDirectives);
 /**
 *  rmaps-angular-utils
 *
-* @version: 1.0.0
+* @version: 1.0.1
 * @author: RealtyMapster LLC
-* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
+* @date: Tue Jul 14 2015 13:59:23 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -206,9 +206,9 @@ return module.directive('rmapsRootEvent', [ '$rootScope', function($rootScope) {
 /**
 *  rmaps-angular-utils
 *
-* @version: 1.0.0
+* @version: 1.0.1
 * @author: RealtyMapster LLC
-* @date: Mon Jul 13 2015 17:36:04 GMT-0400 (EDT)
+* @date: Tue Jul 14 2015 13:59:23 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
