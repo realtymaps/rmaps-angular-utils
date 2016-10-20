@@ -21,29 +21,31 @@
     "url": "https://github.com/realtymaps/rmaps-angular-utils/issues"
   },
   "homepage": "https://github.com/realtymaps/rmaps-angular-utils",
+  "files": [
+    "dist/rmaps-angular-utils.js"
+  ],
   "dependencies": {
     "angular": ">1.2"
   },
   "devDependencies": {
     "angular-mocks": ">1.2",
     "chai": "^3.0.0",
-    "event-stream": "^3.3.1",
-    "gulp-uglify": "^1.2.0",
+    "gulp-uglify": "2.X",
     "karma-chai": "0.X",
-    "karma-chrome-launcher": "1.X",
+    "karma-chrome-launcher": "2.X",
     "karma-expect": "1.X",
     "karma-fixture": "0.2.X",
     "coffee-script": "1.X",
-    "del": "^1.1.1",
+    "del": "2.X",
     "gulp": "^3.8.11",
-    "gulp-concat": "^2.5.2",
-    "gulp-insert": "^0.4.0",
+    "gulp-concat": "2.X",
+    "gulp-insert": "0.X",
     "gulp-js-wrapper": "0.0.3",
     "gulp-util": "^3.0.4",
     "karma": "1.X",
     "karma-coffee-preprocessor": "1.X",
     "karma-mocha": "1.X",
     "karma-phantomjs-launcher": "1.X",
-    "mocha": "^2.2.5"
+    "mocha": "3.X"
   }
 }

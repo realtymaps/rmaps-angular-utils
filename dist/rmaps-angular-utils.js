@@ -4,7 +4,7 @@
 *
 * @version: 1.1.0
 * @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:08:48 GMT-0400 (EDT)
+* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -43,7 +43,7 @@ events.forEach(function(eventname) {
 *
 * @version: 1.1.0
 * @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:08:48 GMT-0400 (EDT)
+* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -166,7 +166,7 @@ module.directive(eventDirectives);
 *
 * @version: 1.1.0
 * @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:08:48 GMT-0400 (EDT)
+* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
@@ -208,7 +208,7 @@ return module.directive('rmapsRootEvent', [ '$rootScope', function($rootScope) {
 *
 * @version: 1.1.0
 * @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:08:48 GMT-0400 (EDT)
+* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{
