@@ -2,9 +2,9 @@
 /**
 *  rmaps-angular-utils
 *
-* @version: 1.0.1
+* @version: 1.1.0
 * @author: RealtyMapster LLC
-* @date: Tue Jul 14 2015 13:59:23 GMT-0400 (EDT)
+* @date: Thu Oct 20 2016 15:08:48 GMT-0400 (EDT)
 * @license: MIT
 */var module = null;
 try{

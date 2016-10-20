@@ -1,10 +1,10 @@
 {
   "name": "rmaps-angular-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "angular directives and utilities",
   "main": "dist/rmaps-angular-utils.js",
   "scripts": {
-    "test": "karma start"
+    "test": "./node_modules/.bin/karma start"
   },
   "repository": {
     "type": "git",
@@ -22,36 +22,28 @@
   },
   "homepage": "https://github.com/realtymaps/rmaps-angular-utils",
   "dependencies": {
-    "angular": "^1.2.6",
-    "chai": "^3.0.0",
-    "event-stream": "^3.3.1",
-    "gulp-bower-files": "^0.2.7",
-    "gulp-coffee": "^2.3.1",
-    "gulp-jasmine2-phantomjs": "^0.2.0",
-    "gulp-karma": "0.0.4",
-    "gulp-mocha-phantomjs": "^0.6.1",
-    "gulp-uglify": "^1.2.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^0.2.0",
-    "karma-expect": "^1.1.0",
-    "karma-fixture": "^0.2.5",
-    "main-bower-files": "^2.9.0"
+    "angular": ">1.2"
   },
   "devDependencies": {
-    "coffee-script": "^1.9.1",
+    "angular-mocks": ">1.2",
+    "chai": "^3.0.0",
+    "event-stream": "^3.3.1",
+    "gulp-uglify": "^1.2.0",
+    "karma-chai": "0.X",
+    "karma-chrome-launcher": "1.X",
+    "karma-expect": "1.X",
+    "karma-fixture": "0.2.X",
+    "coffee-script": "1.X",
     "del": "^1.1.1",
     "gulp": "^3.8.11",
-    "gulp-closure-compiler": "^0.2.17",
     "gulp-concat": "^2.5.2",
     "gulp-insert": "^0.4.0",
     "gulp-js-wrapper": "0.0.3",
-    "gulp-jshint": "^1.9.2",
     "gulp-util": "^3.0.4",
-    "karma": "^0.12.31",
-    "karma-coffee-preprocessor": "^0.3.0",
-    "karma-mocha": "^0.2.0",
-    "karma-phantomjs-launcher": "^0.2.0",
-    "mocha": "^2.2.5",
-    "phantomjs": "^1.9.17"
+    "karma": "1.X",
+    "karma-coffee-preprocessor": "1.X",
+    "karma-mocha": "1.X",
+    "karma-phantomjs-launcher": "1.X",
+    "mocha": "^2.2.5"
   }
 }

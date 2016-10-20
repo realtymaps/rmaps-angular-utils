@@ -23,9 +23,5 @@
   "dependencies": {
     "angular": ">1.2.0",
     "angular-mocks": ">1.2.0"
-  },
-  "devDependencies": {
-    "lodash": "3.10.0",
-    "closure-compiler": "~0.2.6"
   }
 }

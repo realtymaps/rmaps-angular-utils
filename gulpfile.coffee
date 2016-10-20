@@ -2,7 +2,6 @@ gulp = require 'gulp'
 ourPackage = require './package.json'
 fs = require 'fs'
 
-jshint = require 'gulp-jshint'
 uglify = require 'gulp-uglify'
 insert = require 'gulp-insert'
 concat = require 'gulp-concat'
@@ -10,9 +9,6 @@ jswrap = require 'gulp-js-wrapper'
 del = require 'del'
 exec = require('child_process').exec
 log = require('gulp-util').log
-jasmine = require 'gulp-jasmine2-phantomjs'
-coffee = require 'gulp-coffee'
-es = require 'event-stream'
 karma = require('karma').server
 
 module = fs.readFileSync(__dirname + '/src/wrap/module.js', 'utf8');
