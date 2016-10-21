@@ -1,6 +1,6 @@
 {
   "name": "rmaps-angular-utils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "angular directives and utilities",
   "main": "dist/rmaps-angular-utils.js",
   "scripts": {
