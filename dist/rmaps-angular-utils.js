@@ -1,19 +1,13 @@
-;(function(ng) {
-/**
+(function(ng){
+var module = null;
+module = ng.module('rmaps-utils',[]);/**
 *  rmaps-angular-utils
 *
 * @version: 1.1.0
 * @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
+* @date: Fri Oct 21 2016 10:55:41 GMT-0400 (EDT)
 * @license: MIT
-*/var module = null;
-try{
-  module = ng.module('rmaps-utils');
-}
-catch(err){
-  module = ng.module('rmaps-utils',[]);
-}
-var events;
+*/var events;
 
 events = ['load', 'error'];
 
@@ -36,22 +30,6 @@ events.forEach(function(eventname) {
   });
 });
 
-}(angular));
-;(function(ng) {
-/**
-*  rmaps-angular-utils
-*
-* @version: 1.1.0
-* @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
-* @license: MIT
-*/var module = null;
-try{
-  module = ng.module('rmaps-utils');
-}
-catch(err){
-  module = ng.module('rmaps-utils',[]);
-}
 var $parseQuick, MOZ_HACK_REGEXP, PREFIX_REGEXP, SPECIAL_CHARS_REGEXP, app, camelCase, capitalize, directiveNormalize, eventDirectives, forceAsyncEvents;
 
 
@@ -159,22 +137,6 @@ $parseQuick = function(dotPropString, scope) {
 
 module.directive(eventDirectives);
 
-}(angular));
-;(function(ng) {
-/**
-*  rmaps-angular-utils
-*
-* @version: 1.1.0
-* @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
-* @license: MIT
-*/var module = null;
-try{
-  module = ng.module('rmaps-utils');
-}
-catch(err){
-  module = ng.module('rmaps-utils',[]);
-}
 var events, defaultElements;
 
 function capitalizeFirstLetter(string) {
@@ -201,22 +163,6 @@ return module.directive('rmapsRootEvent', [ '$rootScope', function($rootScope) {
   };
 }]);
 
-}(angular));
-;(function(ng) {
-/**
-*  rmaps-angular-utils
-*
-* @version: 1.1.0
-* @author: RealtyMapster LLC
-* @date: Thu Oct 20 2016 15:14:34 GMT-0400 (EDT)
-* @license: MIT
-*/var module = null;
-try{
-  module = ng.module('rmaps-utils');
-}
-catch(err){
-  module = ng.module('rmaps-utils',[]);
-}
 var directiveName;
 
 directiveName = 'rmapsPostRepeat';
@@ -261,5 +207,4 @@ module.directive(directiveName, [
     };
   }
 ]);
-
-}(angular));
+})(angular);
